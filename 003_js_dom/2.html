@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-size: 1em; }
+    h1 {
+      background: #fff000;;
+    }
+    .logo {
+      display: inline-block;
+      list-style: none;
+    }
+    .logo img {
+      width: 100px;
+    }
+    .link-google {
+      color: red;
+    }
+    .special {
+      background: pink;
+    }
+  </style>
+  <title>Document</title>
+  <script>
+
+  </script>
+</head>
+<body>
+  <h1 id="main-title">
+    DOM (Document Object Model
+    <small>small</small>
+  </h1>
+  <ul class='logo-mom'>
+    <li class="logo">
+      <img src="./img/1.jpg" alt="">
+      <a class="link-google" href="https://google.com">Google</a>
+    </li>
+    <li class="logo"><img src="./img/2.png" alt=""></li>
+    <li class="logo"><img src="./img/3.png" alt=""></li>
+  </ul>
+
+  <button class="btn">Click it!</button>
+
+  <script>
+    // var mainTitle = document.querySelector('#main-title small');
+    // console.log(mainTitle);
+    // var logo = document.querySelectorAll('.logo');
+    // console.log(logo[1]);
+
+    // logo[0].style.border = `1px solid red`;
+    // logo[1].style.border = `1px solid red`;
+    // logo[2].style.border = `1px solid red`;
+
+    // for (var i = 0; i < logo.length; i++) {
+    //   logo[i].style.border = `1px solid red`;
+    // }
+
+    // for (const a of logo) a.style.border = `1px solid red`;
+
+    // var link = document.querySelector('.logo a');
+    // console.log(link.getAttribute('href'));
+    // link.setAttribute('href', 'https://studiomeal.com');
+    // console.log(link.getAttribute('href'));
+
+    // var link = document.querySelector('.logo a');
+    // // link.className = 'special';
+    // // link.classList.add('special');
+    // link.classList.add('special','foo');
+    // setTimeout(function () {
+    //   link.classList.remove('link-google');
+    // }, 2000);
+    // console.log(link.classList.contains('special'));
+
+    // var logoMom = document.querySelector('.logo-mom');
+    // var listElem = document.createElement('li');
+    // console.log(listElem);
+    // listElem.innerHTML = `<span>로고</span>`;
+    // logoMom.appendChild(listElem);
+
+    var btn = document.querySelector('.btn');
+    var mainTitle = document.querySelector('#main-title');
+
+    function btnClickHandler() {
+      mainTitle.style.background = 'dodgerblue';
+    }
+
+    // // btn.onclick = btnClickHandler;
+    // btn.onclick = function () {
+    //   btnClickHandler1();
+    //   btnClickHandler2();
+    //   btnClickHandler3();
+    // }
+    // btn.addEventListener('click', btnClickHandler1);
+    // btn.addEventListener('click', btnClickHandler2);
+    // btn.addEventListener('click', btnClickHandler3);
+    // btn.addEventListener('click', btnClickHandler);
+
+    
+
+  </script>
+</body>
+</html>
